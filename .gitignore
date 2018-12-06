@@ -1,0 +1,15 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# dependency directory
+node_modules
+
+# bundle files
+dist/*
+!dist/public
+.idea
+
+# logs
+logs/
+*.log
