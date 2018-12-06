@@ -13,7 +13,7 @@
 
 - preview PDF on mobile and pc
 
-![screenshot](https://github.com/phaneven/React-PDF-Demo/tree/master/dist/public/pic1.jpeg)
+![screenshot](https://github.com/phaneven/React-PDF-Demo/blob/master/dist/public/pic1.jpeg)
 
 ##### Commands
 - install
