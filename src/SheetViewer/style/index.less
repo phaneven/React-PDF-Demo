@@ -1,0 +1,106 @@
+.xlsx-container {
+  top: 20px;
+  background-color: #777;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 90%;
+  bottom: 20px;
+  display: flex;
+  overflow: scroll;
+}
+
+table {
+  background-color: #fff;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+.table {
+  max-width: 100%;
+  // height: 100%;
+  min-width: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 8px;
+        line-height: 1.4;
+        vertical-align: top;
+        border-top: .5px solid #777;
+        white-space: nowrap;
+
+      }
+      > td {
+        border-right: .5px solid #777;
+      }
+      > td:last-child {
+        border-right: 0;
+      }
+      > td:first-child {
+        background-color: #999;
+        border-right: 2px solid #777;
+        width: 22px;
+      }
+    }
+  }
+
+  > thead {
+    background-color: #999;
+    > tr > th {
+      vertical-align: bottom;
+      border-color: #666;
+      border-bottom: 0.5px solid #666;
+    }
+  }
+}
+
+.sheet-selector {
+  width: 100%;
+  height: 23px;
+  box-sizing: content-box;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  > .sheet-name {
+    background-color: #fff;
+    // display: flex;
+    z-index: 100;
+    text-align: center;
+    padding: 0 6px;
+    border-top-right-radius: 4px;
+    border-top: 3px solid #999;
+  }
+
+  > .sheet-name-selected {
+    border-top: 3px solid #1AAD19;
+  }
+}
+
+.xlsx-file {
+  width: 100%;
+  height: 23px;
+  position: fixed;
+  text-align: center;
+  line-height: 23px;
+  -webkit-box-shadow: 0px 1px 1px #1AAD19;
+  -moz-box-shadow: 0px 1px 1px #1AAD19;
+  box-shadow: 0px 1px 1px #1AAD19;
+  top: 0;
+  background-color: #fff;
+}
